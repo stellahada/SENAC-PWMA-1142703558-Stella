@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Evento</title>
+</head>
+  
+<body>
+    <header>
+        <h1>Cadastro de Evento</h1>
+    </header>
+
+    <main>
+        <form action="processar_cadastro.php" method="post">
+            <label for="nome">Nome da Empresa/Evento:</label>
+            <input type="text" id="nome" name="nome" required><br>
+          
+            <label for="tipo">Tipo de Evento:</label>
+            <input type="radio" id="online" name="tipo" value="online" required>
+            <label for="online">Online</label>
+            <input type="radio" id="presencial" name="tipo" value="presencial" required>
+            <label for="presencial">Presencial</label><br>
+
+            <label for="categoria">Categoria:</label>
+            <select id="categoria" name="categoria" required>
+                <option value="show">Show</option>
+                <option value="palestra">Palestra</option>
+                <option value="stand-up">Stand-up</option>
+            </select><br>
+
+            <label for="descricao">Descrição do Evento:</label><br>
+            <textarea id="descricao" name="descricao" rows="4" required></textarea><br>
+
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data" required><br>
+
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" name="hora" required><br>
+
+            <label for="local">Local:</label>
+            <input type="text" id="local" name="local" required><br>
+
+            <label for="valor">Valor do Ingresso/site:</label>
+            <input type="text" id="valor" name="valor"><br>
+
+            <label for="produtor">Informações sobre o Produtor:</label><br>
+            <textarea id="produtor" name="produtor" rows="4" required></textarea><br><br>
+
+            <input type="submit" value="Cadastrar Evento">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Cadastro de Evento. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
