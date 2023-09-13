@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro produtor.css">
+    <title>Cadastro de Evento</title>
+</head>
+  
+<body>
+    <section class = "form-container">
+        <div class="container">
+            <form action="">
+                <h1>Seja um Produtor</h1>
+                <p>Adicione seu evento em nosso site.<br> Preencha o formulário abaixo</p>
+                <div class="input-single">
+                    <input type="text" id="nome" name="nome" class="input" autocomplete="off" required>
+                    <label for="nome">Nome da Empresa/Evento:</label>
+                </div> 
+
+                    <label for="tipo">Tipo de Evento:</label>
+                    <input type="radio" id="online" name="tipo" value="online" required>
+                    <label for="online">Online</label>
+                    <input type="radio" id="presencial" name="tipo" value="presencial" required>
+                    <label for="presencial">Presencial</label> <br> <br>
+        
+                    <label for="categoria">Categoria:</label>
+                    <select id="categoria" name="categoria" required>
+                        <option value="show">Show</option>
+                        <option value="palestra">Palestra</option>
+                        <option value="stand-up">Stand-up</option>
+                    </select>
+
+
+                <div class="input-single">
+                    <input type="text" id="descricao" name="nome" class="input" autocomplete="off" required>
+                    <label for="descricao">Descrição do Evento:</label>
+                </div>
+
+                    <label for="data">Data:</label>
+                    <input type="date" id="data" name="data" required>
+        
+                    <label for="hora">Hora:</label>
+                    <input type="time" id="hora" name="hora" required>
+
+
+                <div class="input-single">
+                    <input type="text" id="local" name="local" class="input" autocomplete="off" required>
+                    <label for="local">Local:</label>
+                </div>
+
+
+                <div class="input-single">
+                    <input type="text" id="site" name="nome" class="input" autocomplete="off" required>
+                    <label for="site">Valor do Ingresso/site:</label>
+                </div>
+
+                <div class="input-single">
+                    <input type="text" id="produtor" name="produtor" class="input" autocomplete="off" required>
+                    <label for="produtor">Informações sobre o Produtor:</label>
+                </div>
+                
+                <div class="bnt">
+                    <input type="submit" value="Cadastrar Evento">
+                </div>
+            </form>
+        </div>
+    
+
+
+    <footer>
+        <p>&copy; 2023 Cadastro de Evento. Todos os direitos reservados.</p>
+    </footer>
+</section>
+</body>
+</html>
