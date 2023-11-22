@@ -1,0 +1,97 @@
+@import url('https://rsms.me/inter/inter-ui.css');
+body {
+  height: 80vh;
+  
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter UI', sans-serif;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.page-title {
+  color: #030303;
+  margin: 0 0 5px;
+}
+
+.page-subtitle {
+  color: #000000;
+  margin-top: 5px;
+}
+
+.page-logo {
+  width: 200px;
+}
+
+
+#listaFilmes img {
+    margin: 10px;
+    max-height: 250px;
+  }
+
+.form-wrapper {
+  margin: 0 0 15px;
+}
+
+
+
+.form-wrapper button {
+  padding: 10px;
+  border: 0;
+  border-radius: 10px;
+  background-color: #2D5966;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form-wrapper button:hover {
+  opacity: 0.8;
+}
+figcaption {
+  font-size: 18px;
+  color: #030303;
+}
+
+.input-single {
+    position: relative;
+    margin: 20px 0;
+
+}
+
+.input-single label {
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    transition: all 0.2s;
+}
+
+.input {
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #ccc;
+    padding: 5px;
+    font-size: 17px;
+    outline: 0;
+}
+
+form .input-single .input:focus ~ label,
+form .input-single .input:valid ~ label {
+    transform: translateY(-30px);
+    font-size: 12px;
+    color: #2D5966;
+}
+
+
+form input[type=submit] {
+    padding: 10px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #2D5966;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+  
